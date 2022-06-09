@@ -1,0 +1,45 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
+	align-items: center;
+	height: 90px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+	position: fixed;
+	width: 90%;
+	background-color: white;
+	overflow-x: hidden;
+}
+
+nav p {
+	font-family: 'Permanent Marker', cursive;
+}
+
+
+.nav-links {
+	width: 35%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-links a {
+	color: lightgray;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+@media (max-width:  415px) {
+	nav > p {
+		display: none;
+	}
+
+	.nav-links {
+		width: 100%;
+	}
+}
